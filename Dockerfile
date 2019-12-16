@@ -38,8 +38,18 @@ RUN rbenv install 2.3.8 &&\
     rbenv rehash
 RUN gem install bundler -v '1.11.2'
 
-RUN rbenv install 2.4.5 &&\
-    rbenv global 2.4.5 &&\
+RUN rbenv install 2.4.9 &&\
+    rbenv global 2.4.9 &&\
+    rbenv rehash
+RUN gem install bundler -v '1.11.2'
+
+RUN rbenv install 2.5.7 &&\
+    rbenv global 2.5.7 &&\
+    rbenv rehash
+RUN gem install bundler -v '1.11.2'
+
+RUN rbenv install 2.6.5 &&\
+    rbenv global 2.6.5 &&\
     rbenv rehash
 RUN gem install bundler -v '1.11.2'
 
